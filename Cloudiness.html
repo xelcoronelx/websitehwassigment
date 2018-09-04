@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Visualization Dashboard (Cloudiness)</title>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport"><!-- bootstrap. -->
+  <!-- bootstrap and style-->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background-color: lightgray">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+        <ul class="nav nav-pills">
+          <li class="active" role="presentation">
+            <a style="color: white; background-color: Teal;"href="index.html">Lattitude</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="MaxTemp.html">Maximum Temperature</a>
+              </li>
+              <li>
+                <a href="humidity.html">Humidity</a>
+              </li>
+              <li>
+                <a href="cloudiness.html">Cloudiness</a>
+              </li>
+              <li>
+                <a href="WindSpeed.html">Wind Speed</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="Comparisons.html">Comparisons</a>
+          </li>
+          <li>
+            <a href="data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><!-- end of nav bar -->
+  <!-- Creates the Overall Grid -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-9">
+        <!-- <div class="panel panel-default"> -->
+        <div class="panel-body">
+          <h2> Latitude vs Cloudiness</h2>
+          <hr>
+          <img class="img-responsive" src="visualizations_and_data/lat_vs_cloudiness.png" style="width:60%; float: left; margin: 5px;">
+          <p> This graphs highlights a weak relationship between latitude and cloudiness.
+          </p>
+        </div>
+        <br>
+
+        </div>
+      <div class="col-md-3">
+        <!-- <div class="panel panel-default"> -->
+        <div class="panel-body">
+          <h3>Visualizations</h3>
+          <hr>
+          <div class="row" style="padding-top: 10px">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <a href="MaxTemp.html"><img alt="" class="img img-responsive" src="visualizations_and_data/lat_vs_temp.png" style="width:80%"></a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <a href="Humidity.html"><img alt="" class="img img-responsive" src="visualizations_and_data/lat_vs_humidity.png" style="width:80%"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <a href="Cloudiness.html"><img alt="" class="img img-responsive" src="visualizations_and_data/lat_vs_cloudiness.png" style="width:80%"></a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <a href="WindSpeed.html"><img alt="" class="img img-responsive" src="visualizations_and_data/lat_vs_Wind.png" style="width:80%"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br>
+  <footer>
+    <p style="text-align:center"><i class="glyphicon glyphicon-copyright-mark"> Coding Bootcamp 2018</i></p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+  </div>
+</body>
+
+</html>
